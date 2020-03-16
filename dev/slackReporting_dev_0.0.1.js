@@ -9,7 +9,7 @@ Build Version: 0.0.1
 const xapi = require('xapi');
 const SLACK_INSTANCE_URL = 'https://hooks.slack.com/services/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'; // Specify a URL to a service like Slack etc.
 const CONTENT_TYPE = "Content-Type: application/json";
-const USER_ACCESS_TOKEN = 'xoxb-6856275383-943224072486-XMcMEffEgV0A4ADIjl5zfiWF'; // Bot User OAuth Access Token
+const USER_ACCESS_TOKEN = ''; // Bot User OAuth Access Token
 const AUTH_HEADER = "Authorization: Bearer " + USER_ACCESS_TOKEN;
 
 var systemInfo = {
@@ -66,4 +66,3 @@ xapi.event.on('UserInterface Extensions Panel Clicked', (event) => {
     postMessage(message)
   }
 });
-
