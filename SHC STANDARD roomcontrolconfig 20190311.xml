@@ -1,0 +1,42 @@
+﻿<Extensions>
+  <Version>1.5</Version>
+  <Panel>
+    <PanelId>panel-1</PanelId>
+    <Type>Home</Type>
+    <Icon>Webex</Icon>
+    <Order>1</Order>
+    <Color>#00D6A2</Color>
+    <Name>Webex/Zoom/CM</Name>
+    <Page>
+      <Name>Select a Meeting Service</Name>
+      <Row>
+        <Name>Call Webex</Name>
+        <Widget>
+          <WidgetId>callWebex</WidgetId>
+          <Name>WEBEX</Name>
+          <Type>Button</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Call Zoom</Name>
+        <Widget>
+          <WidgetId>callZoom</WidgetId>
+          <Name>ZOOM</Name>
+          <Type>Button</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Call Acano</Name>
+        <Widget>
+          <WidgetId>callAcano</WidgetId>
+          <Name>CISCO MEETING</Name>
+          <Type>Button</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Options>hideRowNames=1</Options>
+    </Page>
+  </Panel>
+</Extensions>
