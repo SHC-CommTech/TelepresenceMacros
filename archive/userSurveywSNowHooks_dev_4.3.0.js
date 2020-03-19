@@ -3,11 +3,11 @@ PROGRAM HEADER
 STANFORD HEALTH CARE - Technology & Digital Solutions
 Programmer: Justin Scord
 Last Modified Date: 2020-Feb-17
-Build Version: 4.0.3
+Build Version: 4.3.0
 **********************************************************/
 
 const xapi = require('xapi');
-const SERVICE_NOW_INSTANCE_URL = 'stanfordhcdev.service-now.com'; // Specify a URL to a service like serviceNow etc.
+const SERVICE_NOW_INSTANCE_URL = 'stanfordhctest.service-now.com'; // Specify a URL to a service like serviceNow etc.
 const MONITORING_URL = 'https://' + SERVICE_NOW_INSTANCE_URL + '/api/now/v1/table/incident'; // Specify a URL to a service like serviceNow etc.
 const CHECKUSER_URL = 'https://' + SERVICE_NOW_INSTANCE_URL + '/api/now/table/sys_user?sysparm_query=user_name=';
 const CONTENT_TYPE = "Content-Type: application/json";
@@ -148,7 +148,7 @@ xapi.event.on('UserInterface Message TextInput Response', (event) => {
       break;
 	case 'roomfeedback_getSID':
 	  var bool = SIDCheck(event.Text);
-	var userName;
+	  var userName;
     if(bool === true){
       if(event.Text){
       working("Please wait while we get your account information.");

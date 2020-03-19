@@ -3,7 +3,7 @@ PROGRAM HEADER
 STANFORD HEALTH CARE - Technology & Digital Solutions
 Programmer: Justin Scord
 Last Modified Date: 2020-Feb-17
-Build Version: 4.0.4
+Build Version: 4.0.5
 **********************************************************/
 
 const xapi = require('xapi');
@@ -11,7 +11,7 @@ const SERVICE_NOW_INSTANCE_URL = 'stanfordhctest.service-now.com'; // Specify a 
 const MONITORING_URL = 'https://' + SERVICE_NOW_INSTANCE_URL + '/api/now/v1/table/incident'; // Specify a URL to a service like serviceNow etc.
 const CHECKUSER_URL = 'https://' + SERVICE_NOW_INSTANCE_URL + '/api/now/table/sys_user?sysparm_query=user_name=';
 const CONTENT_TYPE = "Content-Type: application/json";
-const SERVICENOW_USERNAMEPWD_BASE64 = 'Y2lzY29fdGVsZXByZXNlbmNlOlN0YW5mb3JkQDEyMw=='; // format is  "username:password" for basic Authorization. This needs to be base64-encoded. Use e.g. https://www.base64encode.org/ to do this
+const SERVICENOW_USERNAMEPWD_BASE64 = ''; // format is  "username:password" for basic Authorization. This needs to be base64-encoded. Use e.g. https://www.base64encode.org/ to do this
 const SERVICENOW_AUTHTOKEN = "Authorization: Basic " + SERVICENOW_USERNAMEPWD_BASE64;
 
 var sysID;

@@ -3,7 +3,7 @@ const xapi = require('xapi');
 const SERVICE_NOW_INSTANCE_URL = 'stanfordhcdev.service-now.com'; // Specify a URL to a service like serviceNow etc.
 const MONITORING_URL = 'https://' + SERVICE_NOW_INSTANCE_URL + '/api/now/v1/table/incident'; // Specify a URL to a service like serviceNow etc.
 const CONTENT_TYPE = "Content-Type: application/json";
-const SERVICENOW_USERNAMEPWD_BASE64 = 'czAxODc1OTk6QkBzZWJAbGx4NTI0OTU='; // format is "username:password" for basic Authorization. This needs to be base64-encoded. Use e.g. https://www.base64encode.org/ to do this
+const SERVICENOW_USERNAMEPWD_BASE64 = ''; // format is "username:password" for basic Authorization. This needs to be base64-encoded. Use e.g. https://www.base64encode.org/ to do this
 const SERVICENOW_AUTHTOKEN = "Authorization: Basic " + SERVICENOW_USERNAMEPWD_BASE64;
 
 var systemInfo = {
